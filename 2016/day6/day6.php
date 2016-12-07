@@ -19,7 +19,8 @@
 	function find_most_common_letter($letter_breakdown_array) {
 
 		$letter = "";
-		arsort($letter_breakdown_array);
+		//asort($letter_breakdown_array);
+		asort($letter_breakdown_array);
 
 		foreach($letter_breakdown_array as $letter_name => $letter_count) {
 			if(strlen($letter) == 0) {
